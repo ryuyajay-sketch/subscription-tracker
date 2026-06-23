@@ -2,47 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Subs">
+  <link rel="apple-touch-icon" href="icon-192.png">
   <title>Install Subs</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       background: #0f0f12;
       color: #f4f4f6;
+      min-height: 100vh;
+      padding: calc(env(safe-area-inset-top) + 32px) 24px calc(env(safe-area-inset-bottom) + 32px);
+    }
+    .wrap { max-width: 400px; margin: 0 auto; }
+    .icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+    }
+    h1 { font-size: 1.75rem; margin-bottom: 8px; }
+    .lead { color: #8b8b9a; line-height: 1.5; margin-bottom: 32px; }
+    .steps { display: flex; flex-direction: column; gap: 16px; }
+    .step {
+      background: #1a1a21;
+      border: 1px solid #2a2a36;
+      border-radius: 16px;
+      padding: 18px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #6c5ce7;
+      color: white;
+      font-weight: 700;
+      font-size: 0.9rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 24px;
-      text-align: center;
+      flex-shrink: 0;
     }
-    .card { max-width: 360px; }
-    h1 { font-size: 1.5rem; }
-    p { color: #8b8b9a; line-height: 1.5; }
-    a {
-      display: inline-block;
-      margin-top: 20px;
+    .step p { line-height: 1.45; color: #c8c8d4; }
+    .step strong { color: #f4f4f6; }
+    .open-btn {
+      display: block;
+      width: 100%;
+      margin-top: 28px;
       background: #6c5ce7;
       color: white;
       text-decoration: none;
-      padding: 16px 32px;
+      text-align: center;
+      padding: 18px;
       border-radius: 14px;
       font-weight: 600;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
+    }
+    .note {
+      margin-top: 24px;
+      padding: 14px 16px;
+      background: rgba(108, 92, 231, 0.12);
+      border-radius: 12px;
+      color: #8b8b9a;
+      font-size: 0.85rem;
+      line-height: 1.45;
     }
   </style>
 </head>
 <body>
-  <div class="card">
+  <div class="wrap">
+    <img class="icon" src="icon-192.png" alt="Subs icon">
     <h1>Install Subs</h1>
-    <p>Tap the button below. iOS will ask you to install a profile — this adds the app to your home screen.</p>
-    <a href="install.mobileconfig">Install on Home Screen</a>
+    <p class="lead">Add this app to your home screen in Safari — takes about 10 seconds.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <p>Open the app below in <strong>Safari</strong> (must be Safari, not Chrome).</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <p>Tap the <strong>Share</strong> button — the square with an arrow at the bottom of Safari.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <p>Scroll down and tap <strong>Add to Home Screen</strong>, then tap <strong>Add</strong>.</p>
+      </div>
+    </div>
+
+    <a class="open-btn" href="./">Open Subs App</a>
+
+    <p class="note">Profile-based install doesn't work reliably on newer iPhones. Add to Home Screen is the official way and works every time.</p>
   </div>
-  <script>
-    if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-      setTimeout(() => { window.location.href = 'install.mobileconfig'; }, 600);
-    }
-  </script>
 </body>
 </html>
