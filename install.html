@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Install Subs</title>
+  <style>
+    body {
+      font-family: -apple-system, sans-serif;
+      background: #0f0f12;
+      color: #f4f4f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 24px;
+      text-align: center;
+    }
+    .card { max-width: 360px; }
+    h1 { font-size: 1.5rem; }
+    p { color: #8b8b9a; line-height: 1.5; }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      background: #6c5ce7;
+      color: white;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Install Subs</h1>
+    <p>Tap the button below. iOS will ask you to install a profile — this adds the app to your home screen.</p>
+    <a href="install.mobileconfig">Install on Home Screen</a>
+  </div>
+  <script>
+    if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+      setTimeout(() => { window.location.href = 'install.mobileconfig'; }, 600);
+    }
+  </script>
+</body>
+</html>

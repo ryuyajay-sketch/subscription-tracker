@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>FullScreen</key>
+			<true/>
+			<key>Icon</key>
+			<data>
+			aVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQU1BQUFBREFDQUlBQUFE
+			ZHZ2dFFBQUFDSlVsRVFWUjQydTNjUVJHQU1BeEZ3VHJvRFBxUWdH
+			OWtnQUl1UGFRa1dlWXBnRDNtTStZOHBPV0dWeUNBQkpBQUVrQVNR
+			QUpJQUFrZ0NTQUJKSUFFa0FTUUFCSkFBa2dDU0FBSklBRWtnQ1NB
+			bEJiUWRkNUtGRUFDU0FBQkJCQkFBQUVrZ0FTUUFBSUlJSUFFa0FB
+			U1FBQUJCSkFBRWtBQ0NDQ0FBQkpBQWtnQUFRUVFRQUFCSklBRWtF
+			OENFRUFBQVNTQUJKQUFBZ2dnZ05aNlBoNkFBQUlJSUlBQUFnZ2dn
+			QUFDQ0NDQXd2UVVNd1JRTkoxaWpBRGFwcWVHSVlDMjBhbkJDQ0NB
+			QUVxdUo3VWhnSDZoSjY4aGdBQUNxSVNlcElZQUFnZ2dnQUFDQ0ND
+			QUFBSUlJSUFBQWdnZ2dBQUNDS0JJT2trWkFRUVFRQUFCQkJCQUFB
+			RUVFRUFBQVFTUVdROUFob1dHaFFDWk5nTUVFRUFBQVFRUVFBQUJC
+			QkJBQUFFRUVFQUFBUVFRUUFBQkJCQkFBQUVFRUVBQUFRUVFRQUFC
+			QkJCQUFBRUVFRUFBQVFRUVFJN3FIZFVEWk5ZRGtHRWhRQUFCQkJC
+			QUFBRUVFRUFBQVFRUVFBRDV6YS9mL0FJRUVFQUFBUVFRUUFBQkJC
+			QkFBQUVFRUVBQUFRUVFRSUdHSEpRQkJCQkFtd3c1YWUxK0U5MVFE
+			MEFBQVpTY2tWVUdRR1k5QUJrV0FtVGFEQkJBQUFFRUVFQUFBUVFR
+			UUFBQjFCeFFod0FTUUFJSUlJQUFBZ2dnQVNTQUJCQkFBQUVrZ0FT
+			UUFBSUlJSUFFa0FBU1FBQUJCSkFBRWtBQ0NDQ0FBQUlJSUFFa2dI
+			d1NnQUFDQ0NBQkpJQUVFRUFBUlFKU3p3QVNRQUpJQUFrZ0NTQUJK
+			SUFFa0FTUUFCSkFBa2dDU0FBSklBRWtBU1NBQkpBQUVrQVNRQXJ2
+			QlR3RTBxNmg0OWtqQUFBQUFFbEZUa1N1UW1DQw==
+			</data>
+			<key>IsRemovable</key>
+			<true/>
+			<key>Label</key>
+			<string>Subs</string>
+			<key>PayloadDescription</key>
+			<string>Subscription Tracker on your home screen</string>
+			<key>PayloadDisplayName</key>
+			<string>Subs</string>
+			<key>PayloadIdentifier</key>
+			<string>com.ryuya.subs.webclip</string>
+			<key>PayloadType</key>
+			<string>com.apple.webClip.managed</string>
+			<key>PayloadUUID</key>
+			<string>623400AD-62D3-4D61-8DED-B6034334F89F</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Precomposed</key>
+			<true/>
+			<key>URL</key>
+			<string>https://ryuyajay-sketch.github.io/subscription-tracker/</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Installs Subscription Tracker on your home screen</string>
+	<key>PayloadDisplayName</key>
+	<string>Install Subs</string>
+	<key>PayloadIdentifier</key>
+	<string>com.ryuya.subs.profile</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>13AE5C76-CEB8-4549-B58A-BBB7A85E190D</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
