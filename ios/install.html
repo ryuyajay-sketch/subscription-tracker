@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Install Subs</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f0f12;
+      color: #f4f4f6;
+      min-height: 100vh;
+      padding: calc(env(safe-area-inset-top) + 32px) 24px calc(env(safe-area-inset-bottom) + 32px);
+    }
+    .wrap { max-width: 400px; margin: 0 auto; text-align: center; }
+    .icon { width: 72px; height: 72px; border-radius: 16px; margin-bottom: 20px; }
+    h1 { font-size: 1.75rem; margin-bottom: 8px; }
+    p { color: #8b8b9a; line-height: 1.5; margin-bottom: 24px; }
+    a.btn {
+      display: block;
+      background: #6c5ce7;
+      color: white;
+      text-decoration: none;
+      padding: 18px;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .note {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: #8b8b9a;
+      line-height: 1.45;
+      text-align: left;
+      background: #1a1a21;
+      border: 1px solid #2a2a36;
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <img class="icon" src="../icon-192.png" alt="Subs">
+    <h1>Install Subs</h1>
+    <p>Native iOS app — tap below to install directly on your iPhone.</p>
+    <a class="btn" id="install" href="itms-services://?action=download-manifest&amp;url=https://ryuyajay-sketch.github.io/subscription-tracker/ios/manifest.plist">Install App</a>
+    <p class="note">
+      After tapping Install, confirm when iOS asks. If prompted, go to <strong>Settings → General → VPN &amp; Device Management</strong> and trust your developer certificate, then open Subs from your home screen.
+    </p>
+  </div>
+</body>
+</html>
